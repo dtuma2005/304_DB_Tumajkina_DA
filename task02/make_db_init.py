@@ -45,7 +45,7 @@ def generate_sql_script():
     
     sql_commands.append("")
     
-    with open('movies.csv', mode='r', encoding='utf-8') as file:  
+    with open('task02/movies.csv', mode='r', encoding='utf-8') as file:  
         csv_reader = csv.reader(file)
         next(csv_reader)
         for row in csv_reader:
@@ -61,7 +61,7 @@ def generate_sql_script():
     
     sql_commands.append("")
     
-    with open('ratings.csv', mode='r', encoding='utf-8') as file:  
+    with open('task02/ratings.csv', mode='r', encoding='utf-8') as file:  
         csv_reader = csv.reader(file)
         next(csv_reader)
         for row in csv_reader:
@@ -69,7 +69,7 @@ def generate_sql_script():
     
     sql_commands.append("")
     
-    with open('tags.csv', mode='r', encoding='utf-8') as file:  
+    with open('task02/tags.csv', mode='r', encoding='utf-8') as file:  
         csv_reader = csv.reader(file)
         next(csv_reader)
         for row in csv_reader:
@@ -78,7 +78,7 @@ def generate_sql_script():
     
     sql_commands.append("")
     
-    with open('users.txt', mode='r', encoding='utf-8') as file:
+    with open('task02/users.txt', mode='r', encoding='utf-8') as file:
         csv_reader = csv.reader(file, delimiter='|')
         for row in csv_reader:
             name = row[1].replace("'", "''")
